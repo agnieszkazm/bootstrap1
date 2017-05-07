@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>kup kaczke</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>		
 </head>
@@ -173,7 +173,7 @@
 	<section class="my-form">
 		<div class="container-fluid pic1">
 			<div class="row">
-			 	<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-12">
+			 	<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-12 form-background">
 					<h1>Skontaktuj się z nami</h1>
 					<form class="text-center">
 						<div class="form-group">
@@ -192,11 +192,16 @@
 							<label for="inputMessage">Wpisz wiadomość</label>
 							<textarea name="message" id="inputMessage" class="form-control message" rows="5"></textarea>
 						</div>
-						<button type="submit" class="btn btn-primary btn-lg">Wyślij</button>
+						<button type="submit" id = "submit" class="btn btn-primary btn-lg">Wyślij</button>
+						<div class="error"> Uzupełnij pole!</div>
+						<div class="errorEmail"> Nieprawidłowy format adresu e-mail!</div>
+						<span class="close"> hmmm... </span>
 					</form>
 				</div>
 			</div>
 		</div>
-	</section> 	
+	</section> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>	
 </body>
 </html>
